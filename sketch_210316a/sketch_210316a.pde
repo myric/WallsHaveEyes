@@ -15,7 +15,7 @@ void setup() {
 
 void draw() {
   background(0);  
-  text("distance: " + dist,10,15);
+  text("distance: " + dist,15,15);
 }
 
 /* incoming osc message are forwarded to the oscEvent method. */
@@ -23,7 +23,8 @@ void oscEvent(OscMessage message) {
   message.print();
   if(message.checkAddrPattern("/orientation")==true) {
     /* check if the typetag is the right one. -> expecting float (pitch),float (roll), float (yaw)*/
-    if(message.checkTypetag("fff")) {
+    //if(message.checkTypetag("fff")) {
+    if(message.checkTypetag("f")) {
       dist = message.get(0).floatValue();
       //roll  = message.get(1).floatValue();
       //yaw   = message.get(2).floatValue();
