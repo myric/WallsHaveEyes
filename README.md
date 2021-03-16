@@ -2,6 +2,17 @@
 
 I mean, the walls have eyes. It's in the name.
 
+# Materials
+
+- ESP32
+- Ultrasonic ranging module
+- Breadboard
+- Male to female jumper wire
+- Anker battery pack & micro-USB cord
+
+# Design
+
+This is a very simple and delicate implementation of this concept: 
 Thanks to:
 - <a href="https://pypi.org/project/python-osc/">Python Open Sound Control</a> server & client for Python 3.
 - <a href="https://python-osc.readthedocs.io/en/latest/client.html#client-module-documentation">The Python-OSC Docs</a>
