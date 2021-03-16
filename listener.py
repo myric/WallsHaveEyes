@@ -12,6 +12,9 @@ def loop():
         data = sock.recv(2048)
         print(data)
         print(type(data))
+        num = float(data) 
+        print(num)
+        print(type(num))
 
 if __name__ == "__main__":
     sock.send('Hello ESP32'.encode())
